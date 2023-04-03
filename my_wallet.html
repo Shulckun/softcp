@@ -1,122 +1,212 @@
 <!DOCTYPE html>
-<strong>
-<title>create wallet</title>
-<div class="btn-group" id="above">
-    <form action="https://Shulckun.github.io/programshop">
-        <button class="top" type="submit">home
-        </button>
-    </form>
-    <form action="https://shulckun.github.io/about-us/">
-        <button class="top" type="submit">about us
-        </button>
-        </form>
-<form action="https://shulckun.github.io/join-us....ljhjguj/">
-    <button class="top" type="submit">join us
-    </button>
-    </form>
-    <form action="https://shulckun.github.io/social-groups">
-        <button class="top" type="submit">Social Networks
-        </form>
-    </button>
-    </div>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>create wallet</title>
+  
+  <style type="text/css" media="screen">
+    body {font-family:verdana, sans-serif; color:#666; background:#fafafa; padding:20px; text-align:center;}
+    #page {text-align:left; max-width:600px; margin:0 auto;} 
+    h1 {font-size:16px; font-weight:normal; text-align:center;}
+    label {font-size:16px;}
+    label i {font-style:normal; display:inline-block; text-align:right; width:100px;}
+    label textarea {vertical-align:top;}
+    button {margin-left:105px; padding:5px; margin-top:5px; font-size:16px;}
+    input, textarea {width:400px; font-size:16px; font-family: courier, "courier new", monospace; margin:0 0 5px 0; padding:5px; border:1px solid #eee;}
+    select {margin:0 0 5px 0;}
+    @media (min-width:300px) and (max-width: 768px) {
+      input, textarea {width:100%;}
+      label i {display:block; width:auto; text-align:left;}
+      button {display:block; margin:0;}
+    }
+  </style>
+  <script type="text/javascript">
+    // Current date - http://stackoverflow.com/a/4929629/412329
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if(dd<10) {
+        dd='0'+dd
+        } 
+
+    if(mm<10) {
+        mm='0'+mm
+        } 
+
+    today = yyyy+'-'+mm+'-'+dd;
+
+
+    function saveFormAsTextFile()
+        // Based on https://thiscouldbebetter.wordpress.com/2012/12/18/loading-editing-and-saving-a-text-file-in-html5-using-javascrip/
+        {
+        var textToSave =
+          '---\n'+
+          'first name: ' + document.getElementById('first name').value + '\n' + // =first name
+          'last name: ' + document.getElementById('last name').value + '\n' + // =last name
+          'date: ' + today + '\n' + // =date - automatically puts today's date =todo: fix bug allowing going over 60 seconds, i.e. 61 seconds
+          'gender: ' + document.getElementById('gender').value + '\n' + // =gender - select menu
+          'gmail: ' + '\n- ' + document.getElementById('gmail').value.replace(/,\s/g, "\n- ") + '\n' + 
+            // =gmail
+            // The replace() bit above converts 'tag,tag' to '- tag\n- tag\n' with regular expressions
+            // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+          '---\n' + '\n' + 
+          document.getElementById('age').value // =age;
+        var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+        var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+        var fileNameToSaveAs = document.getElementById("filename").value;
+
+        var downloadLink = document.createElement("a");
+        downloadLink.download = fileNameToSaveAs;
+        downloadLink.innerHTML = "Download File";
+        downloadLink.href = textToSaveAsURL;
+        downloadLink.onclick = destroyClickedElement;
+        downloadLink.style.display = "none";
+        document.body.appendChild(downloadLink);
+
+        downloadLink.click();
+        }
+
+    function destroyClickedElement(event)
+        {
+        document.body.removeChild(event.target);
+        }
+  </script>
+      <strong>
+        <h1>welcome to program center(create wallet page)</h1>
+      </strong>
+</head>
+
 <body>
-    <h1 align="middle">
-        welcome to program center(create wallet page)
-        </h1>
-        <p>
-            creating a wallet in program center is completely free
-        </p>
-        <p>
-            to create your wallet complete this form:
-        </p>
-<li>
-    name*:
-</li>
-<li>
-    last name*:
-</li>
-<li>
-    nickname:
-</li>
-<li>
-    gmail*:
-</li>
-<li>
-    age(have to be uper than 10 years old)*:
-</li>
-<style>
-    h2.subject {
-    color:#9ACD32
-    }
-    hr {
-    color:#FFA500
-    }
-    h1 {
-    color:#ff0000
-    }
-    /* Set a style for all buttons */
-    button {
+  <div id="page">
+    <label for="first name">
+      <i> first name:</i> <!-- =first name - input example -->
+      <input id="first name" size="40">
+    </label>
+    
+    <br>
+    
+    <label for="last name">
+      <i>last name:</i> <!-- =last name - input example -->
+      <input id="last name" size="40">
+    </label>
+    
+    <input type="hidden" id="date" size="40"> <!-- =date - hidden input example (automatically populated with current date in yyyy-mm-dd format) -->
+    
+    <br>
+    
+    <label for="gender"> 
+      <i>gender</i> <!-- =senses select menu example -->
+      <select name="gender" id="gender" size="1">
+        <option value="male">male</option>
+        <option value="famel">famle</option>
+        <option value="prefer not to say">prefer not to say</option>
+      </select>
+    </label>
+    
+    <br>
+    
+    <label for="gmail">
+      <i>gmail</i>  <!-- =gmail textarea example -->
+      <textarea id="gmail" cols="40" rows="1"></textarea>
+    </label>
+    
+    <br>
+    
+    <label for="age">
+    <i>age:</i>  <!-- =age textarea example -->
+    <textarea id="age" cols="40" rows="1" ></textarea>
+    </label>
+
+    <br>
+    
+    <label for="filename">
+      <i>Filename</i>
+      <input id="filename" value="" size="40">
+    </label>
+    
+    <button onclick="saveFormAsTextFile()">
+      Save to File
+    </button>
+  </div>
+  <p>
+    send this form to Shulckun@gmail.com
+  </p>
+  <p>
+    then we get your wallet
+  </p>
+  <style>
+          h1 {
+        color:#ff0000
+        }
+        h2.subject {
+color:#9ACD32
+}
+hr {
+color:#FFA500
+}
+h1 {
+color:#ff0000
+}
+}
+button:hover {
+opacity: 0.8;
+}
+p {
+color:#0000FF
+}
+body {
+font-family: Arial, Helvetica, sans-serif
+}
+img {
+color:#ff0000
+}
+h2 {
+color:#4bcf23
+}
+button.top {
     border-radius: 4px;
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 23%;
-    }
-    button:hover {
-    opacity: 0.8;
-    }
-    p {
-    color:#0000FF
-    }
-    body {
-    font-family: Arial, Helvetica, sans-serif
-    }
-    img {
-    color:#ff0000
-    }
-    h2 {
-    color:#4bcf23
-    }
-    button.top {
-        border-radius: 4px;
-    background-color: #00000044;
-    color: #000000
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 12%;
-    }
-    a {
-        color:#35ad4f
-    }
-    .btn-group button {
-        background-color: #00000044; /* Green background */
-        border: 2px solid #000000; /* Green border */
-        color: #311e9c; /* White text */
-        padding: 10px 24px; /* Some padding */
-        cursor: pointer; /* Pointer/hand icon */
-        float: left; /* Float the buttons side by side */
-      }
-      
-      .btn-group button:not(:last-child) {
-        border-right: none; /* Prevent double borders */
-      }
-      
-      /* Clear floats (clearfix hack) */
-      .btn-group:after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-      
-      /* Add a background color on hover */
-      .btn-group button:hover {
-        background-color: #00ff22;
-        color: #ff0000;
-      }
-    </style>
-    </strong>
+background-color: #00000044;
+color: #000000
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 12%;
+}
+a {
+    color:#35ad4f
+}
+.btn-group button {
+    background-color: #00000044; /* Green background */
+    border: 2px solid #000000; /* Green border */
+    color: #311e9c; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #00ff22;
+    color: #ff0000;
+  }
+</style>
+  </style>
+</body>
+</html>
