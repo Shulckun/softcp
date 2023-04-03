@@ -32,7 +32,6 @@
     label {font-size:16px;}
     label i {font-style:normal; display:inline-block; text-align:right; width:100px;}
     label textarea {vertical-align:top;}
-    button {margin-left:105px; padding:5px; margin-top:5px; font-size:16px;}
     input, textarea {width:400px; font-size:16px; font-family: courier, "courier new", monospace; margin:0 0 5px 0; padding:5px; border:1px solid #eee;}
     select {margin:0 0 5px 0;}
     @media (min-width:300px) and (max-width: 768px) {
@@ -147,7 +146,7 @@
       <input id="filename" value="" size="40">
     </label>
     
-    <button onclick="saveFormAsTextFile()">
+    <button class="top" onclick="saveFormAsTextFile()">
       Save to File
     </button>
   </div>
@@ -224,7 +223,17 @@ a {
     background-color: #00ff22;
     color: #ff0000;
   }
-</style>
+  /* Set a style for all buttons */
+button {
+border-radius: 4px;
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 23%;
+}
   </style>
 </body>
 </html>
