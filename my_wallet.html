@@ -70,10 +70,11 @@
           'gender: ' + document.getElementById('gender').value + '\n' + // =gender - select menu
           'gmail: ' + '\n- ' + document.getElementById('gmail').value.replace(/,\s/g, "\n- ") + '\n' + 
             // =gmail
+			          '---\n' + '\n' + 
+          document.getElementById('age').value // =age;
             // The replace() bit above converts 'tag,tag' to '- tag\n- tag\n' with regular expressions
             // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
-          '---\n' + '\n' + 
-          document.getElementById('age').value // =age;
+
         var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
         var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
         var fileNameToSaveAs = document.getElementById("filename").value;
@@ -130,14 +131,14 @@
     
     <label for="gmail">
       <i>gmail</i>  <!-- =gmail textarea example -->
-      <textarea id="gmail" cols="40" rows="1"></textarea>
+      <textarea id="gmail" placeholder="gmail" type="email" cols="40" rows="1"></textarea>
     </label>
     
     <br>
     
     <label for="age">
     <i>age:</i>  <!-- =age textarea example -->
-    <textarea id="age" cols="40" rows="1" ></textarea>
+    <textarea id="age" cols="40" rows="1" placeholder="age"></textarea>
     </label>
 
     <br>
