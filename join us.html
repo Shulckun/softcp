@@ -31,29 +31,149 @@
 <h1 align="middle">
     welcome to program center(join us page)
 </h1>
-<p>
-complete this form:
-</p>
-<p>
-First name:
-<br>
-Last name:
-<br>
-Nickname*:
-<br>
-Gmail*:
-<br>
-Phone number:
-<br>
-You want to be*: (options: developer, admin,
-<br>
-helper, manager, co-developer)
-<br>
-starred options are required
-</p>
-<p>
-when you complete this form send the answers to shulckun@gmail.com
-</p>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>create wallet</title>
+  
+  <style type="text/css" media="screen">
+    body {font-family:verdana, sans-serif; color:#666; background:#fafafa; padding:20px; text-align:center;}
+    #page {text-align:left; max-width:600px; margin:0 auto;} 
+    h1 {font-size:16px; font-weight:normal; text-align:center;}
+    label {font-size:16px;}
+    label i {font-style:normal; display:inline-block; text-align:right; width:100px;}
+    label textarea {vertical-align:top;}
+    input, textarea {width:400px; font-size:16px; font-family: courier, "courier new", monospace; margin:0 0 5px 0; padding:5px; border:1px solid #eee;}
+    select {margin:0 0 5px 0;}
+    @media (min-width:300px) and (max-width: 768px) {
+      input, textarea {width:100%;}
+      label i {display:block; width:auto; text-align:left;}
+      button {display:block; margin:0;}
+    }
+  </style>
+  <script type="text/javascript">
+    // Current date - http://stackoverflow.com/a/4929629/412329
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yyyy = today.getFullYear();
+
+    if(dd<10) {
+        dd='0'+dd
+        } 
+
+    if(mm<10) {
+        mm='0'+mm
+        } 
+
+    today = yyyy+'-'+mm+'-'+dd;
+
+
+    function saveFormAsTextFile()
+        // Based on https://thiscouldbebetter.wordpress.com/2012/12/18/loading-editing-and-saving-a-text-file-in-html5-using-javascrip/
+        {
+        var textToSave =
+          '---\n'+
+          'first name: ' + document.getElementById('first name').value + '\n' + // =first name
+          'last name: ' + document.getElementById('last name').value + '\n' + // =last name
+          'date: ' + today + '\n' + // =date - automatically puts today's date =todo: fix bug allowing going over 60 seconds, i.e. 61 seconds
+          'you want to be: ' + document.getElementById('you want to be:').value + '\n' + // =you want to be: - select menu
+          'gmail: ' + '\n- ' + document.getElementById('gmail').value.replace(/,\s/g, "\n- ") + '\n' + 
+            // =gmail
+			          '---\n' + '\n' + 
+          'age: ' + document.getElementById('age').value // =age;
+            // The replace() bit above converts 'tag,tag' to '- tag\n- tag\n' with regular expressions
+            // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+
+        var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+        var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+        var fileNameToSaveAs = document.getElementById("filename").value;
+
+        var downloadLink = document.createElement("a");
+        downloadLink.download = fileNameToSaveAs;
+        downloadLink.innerHTML = "Download File";
+        downloadLink.href = textToSaveAsURL;
+        downloadLink.onclick = destroyClickedElement;
+        downloadLink.style.display = "none";
+        document.body.appendChild(downloadLink);
+
+        downloadLink.click();
+        }
+
+    function destroyClickedElement(event)
+        {
+        document.body.removeChild(event.target);
+        }
+  </script>
+      <strong>
+        <h1>welcome to program center(create wallet page)</h1>
+      </strong>
+</head>
+
+<body>
+  <div id="page">
+    <label for="first name">
+      <i> first name:</i> <!-- =first name - input example -->
+      <input id="first name" placeholder="first name" size="40">
+    </label>
+    
+    <br>
+    
+    <label for="last name">
+      <i>last name:</i> <!-- =last name - input example -->
+      <input placeholder="last name" id="last name" size="40">
+    </label>
+    
+    <input type="hidden" id="date" size="40"> <!-- =date - hidden input example (automatically populated with current date in yyyy-mm-dd format) -->
+    
+    <br>
+    
+    <label for="you want to be:"> 
+      <i>you want to be:</i> <!-- =senses select menu example -->
+      <select name="you want to be:" id="you want to be:" size="1">
+        <option value="developer">developer</option>
+        <option value="admin">admin</option>
+        <option value="helper">helper</option>
+		        <option value="manager">manager</option>
+				        <option value="co-developer">co-developer</option>
+								        <option value="promo manager">promo manager</option>
+      </select>
+    </label>
+    
+    <br>
+    
+    <label for="gmail">
+      <i>gmail</i>  <!-- =gmail textarea example -->
+      <textarea id="gmail" placeholder="gmail" type="email" cols="40" rows="1"></textarea>
+    </label>
+    
+    <br>
+    
+    <label for="age">
+    <i>age:</i>  <!-- =age textarea example -->
+    <textarea id="age" cols="40" rows="1" placeholder="age"></textarea>
+    </label>
+
+    <br>
+    
+    <label for="filename">
+      <i>Filename</i>
+      <input placeholder="file name" id="filename" value="" size="40">
+    </label>
+    <div class="btn-group">
+    <button onclick="saveFormAsTextFile()">
+      Save to File
+    </button>
+  </div>
+  </div>
+  <p>
+    send this form to Shulckun@gmail.com
+  </p>
+  <p>
+    then we get your rank and we will add you in <a href="about%20us.html">about us page</a>
+  </p>
         <style>
             h2.subject {
             color:#9ACD32
