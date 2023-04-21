@@ -60,11 +60,11 @@
       const f = document.getElementById('form');
       const q = document.getElementById('query');
       const google = 'q=site';
-      const site = 'shulckun.github.io/programshop';
+      const site = '/programshop';
 
       function submitted(event) {
         event.preventDefault();
-        const url = '/' + q.value;
+        const url = site + '/' + q.value;
         const win = window.open(url, '_blank');
         win.focus();
       }
