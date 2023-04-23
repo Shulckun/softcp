@@ -4,7 +4,41 @@
   <head>
     <meta charset='UTF-8'>
     <title>login to my wallet</title>
-    <style>
+    </style>
+  </head>
+  <html>
+  <body>
+  <h1 align="above">welcome to program center(login to my wallet page)
+  <br>
+  	<label>enter your wallet id:</label>
+    <form role="search" id="form">
+		<input type="search" id="query" name="q" placeholder="enter your wallet id" aria-label="login to my wallet">
+
+<button>
+        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+      </button>
+    </form>
+	<label>enter your password:</label>
+	<form role="password" id="form">
+	  	  		<input type="password" id="password" name="p" placeholder="enter your password" aria-label="enter your password">
+    </form>
+	<script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+	        const p = document.getElementById('password');
+      const google = 'q=site';
+      const site = '/programshop';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = site + '/' + q.value + p.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+		    <style>
 	h2.subject {
 color:#9ACD32
 }
@@ -13,21 +47,6 @@ color:#FFA500
 }
 h1 {
 color:#ff0000
-}
-/* Set a style for all buttons */
-button {
-border-radius: 4px;
-background-color: #04AA6D;
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-cursor: pointer;
-width: 23%;
-}
-button:hover {
-opacity: 0.8;
-	background-color: #ffae00;
 }
 p {
 color:#0000FF
@@ -54,31 +73,6 @@ width: 12%;
 a {
     color:#35ad4f
 }
-.btn-group button {
-    background-color: #00000044; /* Green background */
-    border: 2px solid #000000; /* Green border */
-    color: #311e9c; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
-  }
-  
-  .btn-group button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
-  }
-  
-  /* Clear floats (clearfix hack) */
-  .btn-group:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  /* Add a background color on hover */
-  .btn-group button:hover {
-    background-color: #00b7ff;
-    color: #ff0000;
-  }
         body {
         background-color: #3745c2;
         margin: 200px 40%;
@@ -122,30 +116,10 @@ a {
         width: 44px;
         height: 44px;
       }
-    </style>
-  </head>
-  <body>
-  <h1>welcome to program center(login to my wallet page)
-    <form role="search" id="form">
-      <input type="search" id="query" name="q" placeholder="enter your wallet id" aria-label="login to my wallet">
-      <button>
-        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-      </button>
-    </form>
-    <script>
-      const f = document.getElementById('form');
-      const q = document.getElementById('query');
-      const google = 'q=site';
-      const site = '/programshop';
-
-      function submitted(event) {
-        event.preventDefault();
-        const url = site + '/' + q.value;
-        const win = window.open(url, '_blank');
-        win.focus();
-      }
-
-      f.addEventListener('submit', submitted);
-    </script>
+	  label {
+	  color: green;
+	  font-size: 20px;
+	  }
+	  </style>
   </body>
 </html>
