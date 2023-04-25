@@ -11,18 +11,22 @@
   <h1 align="above">welcome to program center(login to my wallet page)
   <br>
   	<label>enter your wallet id:</label>
-    <form role="text" id="form">
-		<input type="text" id="query" name="q" placeholder="enter your wallet id" aira-label="login to my wallet">
-								<button>
-        <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-      </button>
+    <form role="text" id="fo">
+		<input type="text" id="query" name="q" placeholder="enter your wallet id" aira-label="login to my wallet" required>
+	
     </form>
 	<label>enter your password:</label>
-    <form role="text" id="form">
-	  	  		<input type="password" id="password" name="p" placeholder="enter your password" aira-label="enter your password">
-    </form>
+    <form role="text" id="for">
+	  	  		<input type="password" id="password" name="p" placeholder="enter your password" aira-label="enter your password" required>
+	</form>
+	<br>
+	    <form role="text" id="form">
+    		<button type="submit" width="500" height="500">login</button>
+	  </form>
 	<script>
       const f = document.getElementById('form');
+	        const h = document.getElementById('for');
+				        const m = document.getElementById('fo');
       const q = document.getElementById('query');
 	  const p = document.getElementById('password');
       const google = 'q=site';
@@ -31,13 +35,14 @@
       function submitted(event) {
         event.preventDefault();
         const url = site + '/' + q.value + p.value;
-        const win = window.open(url, '_blank');
+        const win = window.open(url);
         win.focus();
       }
-
-      f.addEventListener('submit', submitted);
-    </script>
-		    <style>
+      f.addEventListener('submit', submitted)
+	        h.addEventListener('submit', submitted)
+				        m.addEventListener('submit', submitted)
+</script>		
+		<style>
 	h2.subject {
 color:#9ACD32
 }
@@ -55,6 +60,21 @@ font-family: Arial, Helvetica, sans-serif
 }
 img {
 color:#ff0000
+}
+/* Set a style for all buttons */
+button {
+border-radius: 4px;
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+}
+button:hover {
+opacity: 0.8;
+	background-color: #ffae00;
 }
 h2 {
 color:#4bcf23
@@ -89,21 +109,6 @@ a {
       ::placeholder {
         color: #fff;
         opacity: 0.7; 
-      }
-
-      svg {
-        color: #fff;
-        fill: currentColor;
-        width: 24px;
-        height: 24px;
-        padding: 10px;
-      }
-
-      button {
-        all: unset;
-        cursor: pointer;
-        width: 44px;
-        height: 44px;
       }
 	  label {
 	  color: green;
