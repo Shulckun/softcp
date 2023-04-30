@@ -33,7 +33,7 @@
 
       function submitted(event) {
         event.preventDefault();
-        const url = site + '/' + q.value + p.value;
+        const url = site + '/' + 'u=' + q.value + 'p=' + p.value;
         const win = window.open(url);
         win.focus();
       }
