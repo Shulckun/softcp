@@ -33,6 +33,16 @@
 </button>
 </form> 
     </div>
+	 <p>
+dark mode:
+ <input type="checkbox" class="dark-light" onclick="myFunction()"></input>
+ </p>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
     <h1 align="middle">welcome to program cneter(about us page)</h1>
 <h2 style="text-align:center">Our Team</h2>
 <div class="row">
@@ -188,6 +198,9 @@
     display: block;
   }
 }
+ .dark-mode {
+  background-color: black;
+  }
         </style>
 </body>
 </strong>
