@@ -184,7 +184,7 @@ src="https://translate.google.com/translate_a/element.js?cb=googleTranslateEleme
       <i>Filename</i>
       <input placeholder="file name" id="filename" value="" size="40">
     </label>
-    <div class="btn-group">
+    <div>
     <button onclick="saveFormAsTextFile()">
       Save to File
     </button>
@@ -215,7 +215,20 @@ src="https://translate.google.com/translate_a/element.js?cb=googleTranslateEleme
   background-color: #00000044;
   font-family: Arial;
 }
-
+button {
+border-radius: 4px;
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 23%;
+}
+button:hover {
+opacity: 0.8;
+	background-color: #ffae00;
+}
 /* Links inside the navbar */
 .navbar a {
   float: left;
