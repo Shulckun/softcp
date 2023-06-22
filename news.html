@@ -76,16 +76,6 @@ becuase that anybody cannot create a fake of it
     h1 {
     color:#ff0000
     }
-    button.top {
-border-radius: 4px;
-background-color: #00000044;
-color: #000000
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-cursor: pointer;
-width: 12%;
-    }
     button:hover {
     opacity: 0.8;
     }
@@ -118,30 +108,74 @@ width: 23%;
 	 .dark-mode {
   background-color: black;
   }
-    .btn-group button {
-background-color: #00000044; /* Green background */
-border: 2px solid #000000; /* Green border */
-color: #311e9c; /* White text */
-padding: 10px 24px; /* Some padding */
-cursor: pointer; /* Pointer/hand icon */
-float: left; /* Float the buttons side by side */
+ /* Navbar container */
+ .navbar {
+  overflow: hidden;
+  background-color: #00000044;
+  font-family: Arial;
 }
 
-.btn-group button:not(:last-child) {
-border-right: none; /* Prevent double borders */
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-/* Clear floats (clearfix hack) */
-.btn-group:after {
-content: "";
-clear: both;
-display: table;
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-/* Add a background color on hover */
-.btn-group button:hover {
-background-color: #00b7ff;
-color: #ff0000;
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    opacity: 0.8;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #6d111175;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
     </style>
 </strong>
