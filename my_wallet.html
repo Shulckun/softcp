@@ -178,7 +178,7 @@ src="https://translate.google.com/translate_a/element.js?cb=googleTranslateEleme
       <input placeholder="file name" id="filename" value="" size="40">
     </label>
     <div class="btn-group">
-    <button onclick="saveFormAsTextFile()">
+    <button class="normaly" onclick="saveFormAsTextFile()">
       Save to File
     </button>
   </div>
@@ -289,6 +289,20 @@ color:#4bcf23
  .dark-mode {
   background-color: black;
   }
+  button.normaly {
+border-radius: 4px;
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 23%;
+}
+button:hover {
+opacity: 0.8;
+	background-color: #ffae00;
+}
   </style>
 </body>
 </html>
