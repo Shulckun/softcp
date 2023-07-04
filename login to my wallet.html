@@ -1,7 +1,7 @@
 <!DOCTYPE html>
+<html manifest="/cache.manifest">
 <meta charset="utf-8">
 <link rel="icon" href="https://lh3.googleusercontent.com/pw/AJFCJaX-0g95eDvjU80nmKVA0jaOtmouz_rH-gUW-dC0xj13VwG6lahblMhY9oQuR3EfykAGu688191AC3dhktJOpA74w-n2ZXpEZSDRoS_mLq-oK5YZKdC2WmbmsC3vVOP7uTdmuM1v3fGQdn6YWuSmAQE=w500-h500-s-no?authuser=0">
-<html lang='en' class=''>
   <head>
     <meta charset='UTF-8'>
     <title>login to my wallet</title>
@@ -33,6 +33,11 @@
       const site = '/programshop';
 
       function submitted(event) {
+        if (navigator.onLine) {
+          // work
+        } else {
+          alert("you must be online to use the feture");
+        }
         event.preventDefault();
         const url = site + '/' + 'u=' + q.value + 'p=' + p.value;
         const win = window.open(url);
@@ -40,9 +45,9 @@
       }
       f.addEventListener('submit', submitted)
 	        h.addEventListener('submit', submitted)
-</script>		
-		<style>
-	h2.subject {
+          </script>
+          <style>
+h2.subject {
 color:#9ACD32
 }
 hr {
@@ -116,6 +121,4 @@ a {
 	   .dark-mode {
   background-color: black;
   }
-	  </style>
-  </body>
-</html>
+  </style>
