@@ -1,4 +1,5 @@
 CACHE MANIFEST
+# version 0.1
 CACHE:
 index.html
 all apps.html
@@ -12,5 +13,16 @@ ug.html
 qg.html
 pc.html
 fh.html
-NETWORK:
-*
+NETWORK
+index.html
+all apps.html
+joiun us.html
+login to my wallet.html
+scacs.html
+ss.html
+wwpf.html
+ttvc.html
+ug.html
+qg.html
+pc.html
+fh.html
