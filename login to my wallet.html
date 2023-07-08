@@ -30,15 +30,12 @@
     </div>
     <script>
       function saveData() {
-        if($("#remember").attr("checked"))
-        {
 var walletId = $("#fo").val();
 var walletPass = $("#for").val();
 localStorage["walletId"] = walletId;
 localStorage["walletPass"] = walletPass;
 localStorage["remember"] = "true";
   }
-      }
       function loadStoredDetails() {
         var walletId = $("#fo");
 var walletPass = $("#for");
