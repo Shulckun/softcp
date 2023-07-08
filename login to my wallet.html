@@ -9,9 +9,10 @@
   </head>
   <html>
   <body>
+    <div class="box">
   <h1 align="above">login to my wallet</h1>
   <br>
-  <div class="box">
+
   	<label>enter your wallet id:</label>
     <form role="text" id="fo" class="fo" type="text">
 		<input onclick="loadStoredDetails" type="text" class="fo" id="query" name="q" placeholder="enter your wallet id" required aria-required="true">
@@ -74,6 +75,9 @@
             background-color: #04AA6D;
             color: white;
             padding: 14px 20px;
+            -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                border-radius: 25px;
             margin: 8px 0;
             border: none;
             cursor: pointer;
@@ -102,7 +106,7 @@
             
                   form[type=text] {
                     background-color: #4654e1;
-                    width: 300px;
+                    width: 100%;
                     height: 44px;
                     border-radius: 5px;
                     display:flex;
@@ -206,5 +210,15 @@
             }
             input[type=checkbox] {
               background: #0000FF;
+            }
+            .box {
+            width: 110%;
+            height: 110%;
+              border: rgb(0, 255, 221); 
+              border-width:5px; 
+              border-style:solid;
+                -webkit-border-radius: 25px;
+                -moz-border-radius: 25px;
+                border-radius: 25px;
             }
               </style>
