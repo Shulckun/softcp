@@ -11,21 +11,33 @@
   <body>
   <h1 align="above">login to my wallet</h1>
   <br>
+  <div class="box">
   	<label>enter your wallet id:</label>
-    <form role="text" id="fo">
+    <form role="text" id="fo" class="fo" type="text">
 		<input type="text" id="query" name="q" placeholder="enter your wallet id" required aria-required="true">
 	
     </form>
     <br>
 	<label>enter your password:</label>
-    <form role="text" id="for">
+    <form role="text" id="for" class="for" type="text">
 	  	  		<input type="password" id="password" name="p" placeholder="enter your password" required aria-required="true">
 	</form>
   <br>
 	<br>
 	    <form role="text" id="form">
-    		<button type="submit" width="500" height="500">login</button>
+    		<button type="submit">login</button>
 	  </form>
+    <input align="right" type="checkbox" class="remember" id="remember" onclick="saveData()">
+    </div>
+    <script>
+      function saveData() {
+var walletId = $("#fo").val();
+var walletPass = $("#for").val();
+localStorage["walletId"] = walletId;
+localStorage["walletPass"] = walletPass;
+localStorage["remember"] = "true";
+}
+    </script>
 	<script>
       const f = document.getElementById('form');
 	        const h = document.getElementById('for');
@@ -49,158 +61,161 @@
 	        h.addEventListener('submit', submitted)
           </script>
           <style>
-h2.subject {
-color:#9ACD32
-}
-hr {
-color:#FFA500
-}
-h1 {
-color:#ff0000
-}
-p {
-color:#0000FF
-}
-body {
-font-family: Arial, Helvetica, sans-serif
-}
-img {
-color:#ff0000
-}
-/* Set a style for all buttons */
-button {
-border-radius: 4px;
-background-color: #04AA6D;
-color: white;
-padding: 14px 20px;
-margin: 8px 0;
-border: none;
-cursor: pointer;
-width: 100%;
-}
-button:hover {
-opacity: 0.8;
-	background-color: #ffae00;
-  -webkit-box-shadow: 2px 5px 0 0 rgb(129, 131, 44);
--moz-box-shadow: 2px 5px 0 0 rgba(129, 131, 44);
-box-shadow: 2px 5px 0 0 rgb(129, 131, 44);
-}
-h2 {
-color:#4bcf23
-}
-a {
-    color:#35ad4f
-}
-        body {
-          margin: 230px 40%;
-        background-image:
-      -webkit-repeating-linear-gradient(top,
-      rgb(166, 255, 0) 0%,
-      rgb(0, 174, 255) 100%);
-      }
-
-      form {
-        background-color: #4654e1;
-        width: 300px;
-        height: 44px;
-        border-radius: 5px;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-      }
-
-      input {
-        all: unset;
-        font: 16px system-ui;
-        color: #fff;
-        height: 100%;
-        width: 100%;
-        padding: 6px 10px;
-      }
-
-      ::placeholder {
-        color: #fff;
-        opacity: 0.7; 
-      }
-	  label {
-	  color: green;
-	  font-size: 20px;
-	  }
-	   .dark-mode {
-  background-color: black;
-  }
-  .navbar {
-  overflow: hidden;
-  background-image:
-      -webkit-repeating-linear-gradient(top,
-      rgba(233, 15, 15, 0.685) 0%,
-      rgba(194, 181, 67, 0.911) 100%);
-  font-family: Arial;
-  -webkit-border-radius: 25px;
-      -moz-border-radius: 25px;
-      border-radius: 25px;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-    opacity: 0.8;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px #6d111175;
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-  </style>
+            h2.subject {
+            color:#9ACD32
+            }
+            hr {
+            color:#FFA500
+            }
+            h1 {
+            color:#ff0000
+            }
+            p {
+            color:#0000FF
+            }
+            body {
+            font-family: Arial, Helvetica, sans-serif
+            }
+            img {
+            color:#ff0000
+            }
+            /* Set a style for all buttons */
+            button {
+            border-radius: 4px;
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            }
+            button:hover {
+            opacity: 0.8;
+              background-color: #ffae00;
+              -webkit-box-shadow: 2px 5px 0 0 rgb(129, 131, 44);
+            -moz-box-shadow: 2px 5px 0 0 rgba(129, 131, 44);
+            box-shadow: 2px 5px 0 0 rgb(129, 131, 44);
+            }
+            h2 {
+            color:#4bcf23
+            }
+            a {
+                color:#35ad4f
+            }
+                    body {
+                      margin: 230px 40%;
+                    background-image:
+                  -webkit-repeating-linear-gradient(top,
+                  rgb(166, 255, 0) 0%,
+                  rgb(0, 174, 255) 100%);
+                  }
+            
+                  form[type=text] {
+                    background-color: #4654e1;
+                    width: 300px;
+                    height: 44px;
+                    border-radius: 5px;
+                    display:flex;
+                    flex-direction:row;
+                    align-items:center;
+                  }
+            
+                  input {
+                    all: unset;
+                    font: 16px system-ui;
+                    color: #fff;
+                    height: 100%;
+                    width: 100%;
+                    padding: 6px 10px;
+                  }
+            
+                  ::placeholder {
+                    color: #fff;
+                    opacity: 0.7; 
+                  }
+                label {
+                color: green;
+                font-size: 20px;
+                }
+                 .dark-mode {
+              background-color: black;
+              }
+              .navbar {
+              overflow: hidden;
+              background-image:
+                  -webkit-repeating-linear-gradient(top,
+                  rgba(233, 15, 15, 0.685) 0%,
+                  rgba(194, 181, 67, 0.911) 100%);
+              font-family: Arial;
+              -webkit-border-radius: 25px;
+                  -moz-border-radius: 25px;
+                  border-radius: 25px;
+            }
+            
+            /* Links inside the navbar */
+            .navbar a {
+              float: left;
+              font-size: 16px;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            /* The dropdown container */
+            .dropdown {
+              float: left;
+              overflow: hidden;
+            }
+            
+            /* Dropdown button */
+            .dropdown .dropbtn {
+              font-size: 16px;
+              border: none;
+              outline: none;
+              color: white;
+              padding: 14px 16px;
+              background-color: inherit;
+              font-family: inherit; /* Important for vertical align on mobile phones */
+              margin: 0; /* Important for vertical align on mobile phones */
+            }
+            
+            /* Add a red background color to navbar links on hover */
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                opacity: 0.8;
+            }
+            
+            /* Dropdown content (hidden by default) */
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px #6d111175;
+              z-index: 1;
+            }
+            
+            /* Links inside the dropdown */
+            .dropdown-content a {
+              float: none;
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+            }
+            
+            /* Add a grey background color to dropdown links on hover */
+            .dropdown-content a:hover {
+              background-color: #ddd;
+            }
+            
+            /* Show the dropdown menu on hover */
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+            input[type=checkbox] {
+              background: #0000FF;
+            }
+              </style>
