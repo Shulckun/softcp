@@ -14,13 +14,12 @@
   <div class="box">
   	<label>enter your wallet id:</label>
     <form role="text" id="fo" class="fo" type="text">
-		<input type="text" id="query" name="q" placeholder="enter your wallet id" required aria-required="true">
-	
+		<input onclick="loadStoredDetails" type="text" class="fo" id="query" name="q" placeholder="enter your wallet id" required aria-required="true">
     </form>
     <br>
 	<label>enter your password:</label>
     <form role="text" id="for" class="for" type="text">
-	  	  		<input type="password" id="password" name="p" placeholder="enter your password" required aria-required="true">
+	  	  		<input type="password" id="password" class="for" name="p" placeholder="enter your password" required aria-required="true">
 	</form>
   <br>
 	<br>
@@ -31,12 +30,39 @@
     </div>
     <script>
       function saveData() {
+        if (Modernizr.localStorage) {
+        if($("#remember").attr("checked"))
+        {
 var walletId = $("#fo").val();
 var walletPass = $("#for").val();
 localStorage["walletId"] = walletId;
 localStorage["walletPass"] = walletPass;
 localStorage["remember"] = "true";
+  }
 }
+else
+{
+  // no support for remember me
+}
+      }
+      function loadStoredDetails() {
+        if (Modernizr.localStorage) {
+        var walletId = $("#fo");
+var walletPass = $("#for");
+var remember = localStorage["remember"];     
+if (walletId) {
+  $("#fo").val(walletId);
+}
+if (walletPass) {
+  $("#for").val(walletPass)
+}
+if (remember == "true") {
+  $("#remember").attr("checked", "checked");
+}
+} else {
+  // no suppor for no remember storage loaded
+}
+      }
     </script>
 	<script>
       const f = document.getElementById('form');
