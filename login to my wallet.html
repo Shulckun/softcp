@@ -28,23 +28,24 @@
 	  </form>
     <input align="right" type="checkbox" class="remember" id="remember" onclick="saveData()">
     </div>
+    dsamf
     <script>
       function saveData() {
-var walletId = $("#fo").val();
-var walletPass = $("#for").val();
+var walletId = $("#query").val();
+var walletPass = $("#password").val();
 localStorage["walletId"] = walletId;
 localStorage["walletPass"] = walletPass;
 localStorage["remember"] = "true";
   }
       function loadStoredDetails() {
-        var walletId = $("#fo");
-var walletPass = $("#for");
+        var walletId = $("#query");
+var walletPass = $("#password");
 var remember = localStorage["remember"];     
 if (walletId) {
-  $("#fo").val(walletId);
+  $("#query").val(walletId);
 }
 if (walletPass) {
-  $("#for").val(walletId)
+  $("#password").val(walletPass)
 }
 if (remember == "true") {
   $("#remember").attr("checked", "checked");
