@@ -37,18 +37,17 @@
       const site = '/programshop';
 
       function submitted(event) {
-        if (navigator.onLine) {
-          // work
-        } else {
-          alert("this option is not availble u ntil you connect to your interten please connect to your internet");
-        }
+                          if (navigator.onLine) {
         event.preventDefault();
         const url = site + '/' + 'u=' + q.value + 'p=' + p.value;
         const win = open(url);
         win.focus();
-      }
       f.addEventListener('submit', submitted)
 	        h.addEventListener('submit', submitted)
+                  } else {
+          alert("you must be online to use this feature");
+        }
+      }
           </script>
           <style>
             h2.subject {
