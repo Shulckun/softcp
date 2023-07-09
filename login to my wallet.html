@@ -42,9 +42,9 @@
         const win = open(url);
         win.focus();
       }
-              if (navigator.onLine) {
       f.addEventListener('submit', submitted)
 	        h.addEventListener('submit', submitted)
+                        if (navigator.onLine) {
                   } else {
           alert("you must be online to use this feature");
         }
