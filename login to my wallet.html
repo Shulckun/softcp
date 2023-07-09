@@ -41,9 +41,10 @@
         const url = site + '/' + 'u=' + q.value + 'p=' + p.value;
         const win = open(url);
         win.focus();
-        if (navigator.onLine) {
       f.addEventListener('submit', submitted)
 	        h.addEventListener('submit', submitted)
+                 if (navigator.onLine) {
+                  // login to the wallet which the customer want
                   } else {
           alert("you must be online to use this feature");
         }
