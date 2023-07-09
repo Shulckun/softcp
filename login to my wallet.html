@@ -37,17 +37,17 @@
       const site = '/programshop';
 
       function submitted(event) {
+                         if (navigator.onLine) {
+                  // login to the wallet which the customer want
+                  } else {
+          alert("you must be online to use this feature");
+        }
         event.preventDefault();
         const url = site + '/' + 'u=' + q.value + 'p=' + p.value;
         const win = open(url);
         win.focus();
       f.addEventListener('submit', submitted)
 	        h.addEventListener('submit', submitted)
-                 if (navigator.onLine) {
-                  // login to the wallet which the customer want
-                  } else {
-          alert("you must be online to use this feature");
-        }
       }
           </script>
           <style>
