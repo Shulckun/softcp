@@ -18,11 +18,6 @@
    function saveFormAsTextFile()
        // Based on https://thiscouldbebetter.wordpress.com/2012/12/18/loading-editing-and-saving-a-text-file-in-html5-using-javascrip/
        {
-        if (navigator.onLine) {
-          // work
-                  } else {
-          alert("you must be online to use this feature");
-        }
        var textToSave =
          'first name: ' + document.getElementById('first name').value + '\n' + // =first name
          'last name: ' + document.getElementById('last name').value + '\n' + // =last name
