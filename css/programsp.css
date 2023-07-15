@@ -47,7 +47,6 @@
   -webkit-repeating-linear-gradient(bottom,
   rgba(59, 233, 15, 0.685) 0%,
   rgba(98, 62, 255, 0.945) 100%);
-  min-width: 160px;
 }
 
 .navbar2 {
@@ -62,7 +61,6 @@
   -webkit-repeating-linear-gradient(bottom,
   rgba(59, 233, 15, 0.685) 0%,
   rgba(98, 62, 255, 0.945) 100%);
-  min-width: 160px;
 }
 
 /* Links inside the navbar */
