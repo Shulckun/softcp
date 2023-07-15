@@ -42,6 +42,13 @@
   width: 4%;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #00000044;
+  font-family: Arial;
+  width: 8%;
+}
+
 /* Links inside the navbar */
 .navbar a {
   float: left;
