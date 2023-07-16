@@ -125,3 +125,17 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-image:
+  -webkit-repeating-linear-gradient(bottom,
+  rgba(59, 233, 15, 0.685) 0%,
+  rgba(98, 62, 255, 0.945) 100%);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #6d111175;
+  z-index: 1;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
