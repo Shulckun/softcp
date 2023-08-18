@@ -1,9 +1,9 @@
-#softcp
-hello!
-welcome to program center
-the most trusted program shop
-what is program cneter?
-program center is the best place to buy programs
-you can find any Software Applications in program center
-so enjoy!!!!!!!
-<3
+# softcp
+# all rights belong to softcp
+softcp(soft computer programs)
+how to use: https://shulckun.github.io/softcp
+company in: iran
+can buy with iran credit card
+scanned with github
+completely secure(this site do not save the information of your credit card, don't be worry)
+all rights belong to softcp
