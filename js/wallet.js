@@ -3,7 +3,7 @@
       const q = document.getElementById('query');
 	  const p = document.getElementById('password');
       const google = 'q=site';
-      const site = '/programshop/wallets';
+      const site = '/softcp/wallets';
 
       function submitted(event) {
         if (navigator.onLine) {
