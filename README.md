@@ -1,6 +1,6 @@
 # softcp
 <p>softcp(soft computer programs)</p>
-<p>usage web:</p><form action="https://shulckun.github.io/softcp"><button type="submit">softcp</button></form>
+<p>usage web:</p>https://shulckun.github.io/softcp
 <p>company in: iran</p>
 <p>can buy with iran credit card</p>
 <p>scanned with github</p>
