@@ -64,6 +64,17 @@
 .dropdown {
   float: left;
   overflow: hidden;
+  overflow: hidden;
+  background-color: #00000044;
+  font-family: Arial;
+  width: 7%;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background-image:
+  -webkit-repeating-linear-gradient(bottom,
+  rgba(59, 233, 15, 0.685) 0%,
+  rgba(255, 252, 62, 0.945) 100%);
 }
 
 /* Dropdown button */
