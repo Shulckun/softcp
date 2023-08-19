@@ -35,21 +35,8 @@
                 color:#4bcf23
                 }
                  /* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: #00000044;
-  font-family: Arial;
-  width: 4%;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
-  background-image:
-  -webkit-repeating-linear-gradient(bottom,
-  rgba(59, 233, 15, 0.685) 0%,
-  rgba(98, 62, 255, 0.945) 100%);
-}
 
-.navbar2 {
+.navbar {
   overflow: hidden;
   background-color: #00000044;
   font-family: Arial;
