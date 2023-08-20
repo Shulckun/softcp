@@ -1,6 +1,8 @@
 # softcp
 
-<a href="#what-happend-if-you-join-in-softcp">
+quick access:
+
+<a href="#what-happend-if-you-join-in-softcp">what happend if i join in softcp</a>
 
 softcp(soft computer programs)
 
