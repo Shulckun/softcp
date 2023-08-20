@@ -45,7 +45,7 @@
   -moz-border-radius: 25px;
   border-radius: 25px;
   background-image:
-  -webkit-repeating-linear-gradient(orib,
+  -webkit-repeating-linear-gradient(right,
   rgba(255, 0, 0, 0.685) 0%,
   rgba(40, 68, 230, 0.945) 100%);
 }
