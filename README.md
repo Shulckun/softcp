@@ -2,17 +2,6 @@
 
 quick access:
 
-<div class="navbar" id="above">
-    <div class="dropdown">
-        <button class="dropbtn">download
-            <i class="fa fa-caret-down"></i>
-        </button>
-    <div class="dropdown-content">
-        <a href="#join-us-as-a-developer">join us as a developer</a>
-        </div>
-    </div>
-</div>
-
 <a href="#what-happend-if-you-join-in-softcp">what happend if i join in softcp?</a>
 
 softcp(soft computer programs)
@@ -130,90 +119,3 @@ you need these to bneing a promo manager:
 ### having a gmail account
 
 ##                            all rights belong to softcp
-<style>
-    .navbar {
-  overflow: hidden;
-  background-color: #00000044;
-  font-family: Arial;
-  width: 8%;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
-  background-image:
-  -webkit-repeating-linear-gradient(orib,
-  rgba(255, 0, 0, 0.685) 0%,
-  rgba(40, 68, 230, 0.945) 100%);
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-    opacity: 0.8;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px #6d111175;
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-image:
-  -webkit-repeating-linear-gradient(bottom,
-  rgba(59, 233, 15, 0.685) 0%,
-  rgba(98, 62, 255, 0.945) 100%);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px #6d111175;
-  z-index: 1;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
-}
-</style>
