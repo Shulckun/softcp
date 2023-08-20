@@ -114,4 +114,4 @@ you need these to bneing a promo manager:
 ### poster creating
 ### having a gmail account
 
-## all rights belong to softcp
+##                            all rights belong to softcp
