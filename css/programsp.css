@@ -45,9 +45,9 @@
   -moz-border-radius: 25px;
   border-radius: 25px;
   background-image:
-  -webkit-repeating-linear-gradient(bottom,
-  rgba(59, 233, 15, 0.685) 0%,
-  rgba(255, 252, 62, 0.945) 100%);
+  -webkit-repeating-linear-gradient(right,
+  rgba(255, 0, 0, 0.685) 0%,
+  rgba(40, 68, 230, 0.945) 100%);
 }
 
 /* Links inside the navbar */
