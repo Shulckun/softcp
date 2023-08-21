@@ -4,6 +4,8 @@ quick access:
 
 <a href="#what-happend-if-you-join-in-softcp">what happend if i join in softcp?</a>
 
+<a href="#how-can-i-download-programs">how can i download programs</a>
+
 softcp(soft computer programs)
 
 repo website: https://shulckun.github.io/softcp
@@ -118,7 +120,7 @@ you need these to bneing a promo manager:
 ### poster creating
 ### having a gmail account
 
-# how can i download programs for free?
+# how can i download programs?
 
 first off, know that all programs here are for free!
 
