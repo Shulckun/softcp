@@ -22,6 +22,16 @@ scanned with github
 
 completely secure(this site do not save the information of your credit card, don't be worry)
 
+# how can i download programs?
+
+first off, know that all programs here are for free!
+
+## to download them, there are two ways:
+
+1)go to <a href="https://shulckun.github.io/softcp">softcp website</a> and download from all apps page(recomended option)
+
+2)in repo files go to programs files and download which program do you want
+
 # what happend if you join in softcp?
 
 ## join us as a developer:
@@ -119,15 +129,5 @@ you need these to bneing a promo manager:
 
 ### poster creating
 ### having a gmail account
-
-# how can i download programs?
-
-first off, know that all programs here are for free!
-
-## to download them, there are two ways:
-
-1)go to <a href="https://shulckun.github.io/softcp">softcp website</a> and download from all apps page(recomended option)
-
-2)in repo files go to programs files and download which program do you want
 
 ##                            all rights belong to softcp
