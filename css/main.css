@@ -136,7 +136,7 @@ color:#4bcf23
     color:aqua
   }
   p:hover span {
-    color: #000000;
+    color: #00ff0d;
       -webkit-transform: rotate(10deg) translateX(40px) scale(1.5);
       -moz-transform: trotate(10deg) translateX(40px) scale(1.5);
       -ms-transform: rotate(10deg)
