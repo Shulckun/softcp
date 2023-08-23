@@ -1,5 +1,4 @@
-function canvas()
-                {
+
               const TWO_PI = Math.PI * 2;
 const HALF_PI = Math.PI * 0.5;
 
@@ -271,4 +270,4 @@ function cubeBezier(p0, c0, c1, p1, t) {
 
     return p;
 }
-                }
+            
