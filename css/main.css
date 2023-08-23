@@ -143,5 +143,6 @@ p:hover span {
   color: #008000;  
   }
 p span {
+  color: #0000FF;
   display: inline-block;
 }
