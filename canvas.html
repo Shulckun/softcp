@@ -1,10 +1,21 @@
 <canvas id="drawing_canvas"></canvas>
+<strong>
+<h1 align="middle">thanks for choosing our program</h1>
+</strong>
 <style>
+
   body {
-    background-color: #fff;
-    margin: 0;
     overflow: hidden;
+    background-image:
+                  -webkit-repeating-linear-gradient(left,
+                  rgb(230, 45, 45) 0%,
+                  rgb(54, 34, 231) 100%);
+                  margin: 0;
+    font-family: Arial, Helvetica, sans-serif
 }
+h1 {
+
+                  }
 
 #drawing_canvas {
     position: absolute;
@@ -93,7 +104,7 @@ Loader = function(x, y) {
 Loader.prototype = {
     reset:function() {
         this._progress = 0;
-        this.complete = false;
+        this.complete = true;
     },
     set progress(p) {
         this._progress = p < 0 ? 0 : (p > 1 ? 1 : p);
