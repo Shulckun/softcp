@@ -135,12 +135,17 @@ color:#4bcf23
     font-size: 15px;
     color:aqua
   }
-  p span:hover {
+  p:hover span {
     color: #000000;
-      -webkit-transform: rotate(10deg) translateX(40px) scale(1.5);
-      -moz-transform: trotate(10deg) translateX(40px) scale(1.5);
-      -ms-transform: rotate(10deg)
-        translateX(40px) scale(1.5);
-      -o-transform: rotate(10deg)  translateX(40px) scale(1.5);
-      transform: rotate(10deg)  translateX(40px) scale(1.5);
+  -webkit-transform: rotate(10deg) translateX(40px) scale(1.5);
+  -moz-transform: trotate(10deg) translateX(40px) scale(1.5);
+  -ms-transform: rotate(10deg)
+    translateX(40px) scale(1.5);
+  -o-transform: rotate(10deg)  translateX(40px) scale(1.5);
+  transform: rotate(10deg)  translateX(40px) scale(1.5);
     }
+p span {
+font-size: 30px;
+  color: #blue;
+  display: inline-block;
+}
