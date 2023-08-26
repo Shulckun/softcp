@@ -1,0 +1,25 @@
+.faq_answer {
+    font-size: 17px;
+    background-image:
+    -webkit-repeating-linear-gradient(right,
+    rgb(81, 255, 0) 0%,
+    rgb(0, 247, 255) 100%);
+    min-width: 160px;
+    min-height: 50px;
+    box-shadow: 0px 8px 16px 0px #6d111175;
+    font-weight: bold;
+}
+.faq_question {
+    font-size: 17px;
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(178, 217, 250);
+    min-width: 1260px;
+    min-height: 30px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
