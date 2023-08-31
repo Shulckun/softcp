@@ -30,8 +30,7 @@ def fa():
 
 
     print(links)
-    input()
-    fa()
+    fa(end)
     
 #Label for the window
 headingFrame = Frame(wn,bg="red",bd=5)
