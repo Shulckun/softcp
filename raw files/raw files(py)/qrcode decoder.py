@@ -15,7 +15,8 @@ def rq():
     image = cv2.imread(filename)
     detector = cv2.QRCodeDetector()
     data, vertices_array, binary_qrcode = detector.detectAndDecode(image)
-    messagebox.showinfo("qrcode decoded",data)  
+    print(data)
+    messagebox.showinfo("qrcode decoded",data)
 #Label for the window
 headingFrame = Frame(wn,bg="red",bd=5)
 headingFrame.place(relx=0.15,rely=0.05,relwidth=0.7,relheight=0.1)
