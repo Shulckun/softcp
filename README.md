@@ -117,6 +117,8 @@ to being co-developer you need these:
 ### gmail account
 ### know about code reading
 
+## join us as a promo manager
+
 being a promo manager is too easy
 
 you have to be creative. just this!
