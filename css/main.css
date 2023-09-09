@@ -155,8 +155,8 @@ p span {
 .introl {
   background-image:
   -webkit-repeating-linear-gradient(right,
-  rgba(66, 61, 61, 0.986) 0%,
-  rgba(66, 61, 61, 0.986) 100%);
+  rgba(255, 255, 255, 0.986) 0%,
+  rgba(255, 255, 255, 0.986) 100%);
   box-shadow: 0px 20px 20px 0px #3f424098;
   width: 40%;
   -webkit-border-radius: 25px;
@@ -171,8 +171,8 @@ p span {
 .intror {
   background-image:
   -webkit-repeating-linear-gradient(right,
-  rgba(66, 61, 61, 0.986) 0%,
-  rgba(66, 61, 61, 0.986) 100%);
+  rgba(255, 255, 255, 0.986) 0%,
+  rgba(255, 255, 255, 0.986) 100%);
   box-shadow: 0px 20px 20px 0px #3f424098;
   width: 40%;
   -webkit-border-radius: 25px;
@@ -193,7 +193,8 @@ p span {
   -moz-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
   -o-transform: rotate(-5deg);
-  transform: rotate(15deg);  
+  transform: rotate(15deg); 
+  background-color: rgb(66, 61, 61, 0.986);
   }
   .intror:hover {
     cursor: pointer;
@@ -201,7 +202,8 @@ p span {
     -moz-transform: rotate(-5deg);
     -ms-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
-    transform: rotate(-15deg);  
+    transform: rotate(-15deg); 
+    background-color: rgb(66, 61, 61, 0.986); 
     }
 #intro:hover p {
   color: #008000;
