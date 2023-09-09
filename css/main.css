@@ -198,3 +198,25 @@ p span {
 #intro:hover p {
   color: #008000;
 }
+@keyframes smooth-appear {
+  to{
+    bottom: 20px;
+    opacity: 1;
+    
+    
+  }
+}
+.scup {
+  background-color: #fff;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #ff0000;
+  position: fixed;
+  padding: 20px;
+  bottom: -100%;
+  opacity: 0;
+  left: 97%;
+  transform: translateX(-50%);
+  animation: smooth-appear 1s ease forwards;
+}
