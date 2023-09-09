@@ -232,8 +232,5 @@ p span {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
-  background-image:
-  -webkit-repeating-linear-gradient(top,
-  rgba(27, 27, 29, 0.685) 0%,
-  rgba(27, 27, 29, 0.685) 100%);
+
 }
