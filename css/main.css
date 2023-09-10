@@ -155,7 +155,7 @@ p span {
 .introl {
   background-image:
   -webkit-repeating-linear-gradient(right,
-  rgba(255, 255, 255, 0.986) 0%,
+  rgba(0, 0, 0, 0.986) 0%,
   rgba(255, 255, 255, 0.986) 100%);
   box-shadow: 0px 20px 20px 0px #3f424098;
   width: 40%;
@@ -170,8 +170,8 @@ p span {
 }
 .intror {
   background-image:
-  -webkit-repeating-linear-gradient(right,
-  rgba(255, 255, 255, 0.986) 0%,
+  -webkit-repeating-linear-gradient(left,
+  rgba(0, 0, 0, 0.986) 0%,
   rgba(255, 255, 255, 0.986) 100%);
   box-shadow: 0px 20px 20px 0px #3f424098;
   width: 40%;
@@ -194,7 +194,6 @@ p span {
   -ms-transform: rotate(-5deg);
   -o-transform: rotate(-5deg);
   transform: rotate(15deg); 
-  background-color: rgb(66, 61, 61, 0.986);
   }
   .intror:hover {
     cursor: pointer;
@@ -203,7 +202,6 @@ p span {
     -ms-transform: rotate(-5deg);
     -o-transform: rotate(-5deg);
     transform: rotate(-15deg); 
-    background-color: rgb(66, 61, 61, 0.986); 
     }
 #intro:hover p {
   color: #008000;
@@ -235,4 +233,8 @@ p span {
   -moz-border-radius: 25px;
   border-radius: 25px;
 
+}
+.dark {
+  background-color: rgb(0, 0, 0);
+  color: #ff0000;
 }
